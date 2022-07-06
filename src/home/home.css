@@ -3,6 +3,29 @@
     src: url('https://fonts.googleapis.com/css2?family');
 }
 
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo {
+    background-color: rgb(224, 163, 49);
+}
+
 h2, h3  {
     font-family: 'Open Sans', sans-serif;
 }
@@ -11,7 +34,58 @@ li {
     list-style: none
 }
 
+.subscribe-input {
+    border-radius: 5px;
+}
+
+.subscribe-button {
+    color: white;
+    background-color: rgb(224, 163, 49);
+    border-radius: 5px;
+    border: none;
+}
+
 .middle-image {
     width: 220px;
     height: 150px;
+}
+
+.middle-image-container {
+    width: 300px;
+    height: 200px;
+    background-color: rgb(224, 163, 49);
+}
+
+.bottom-container {
+    background-color: rgb(224, 163, 49);
+}
+
+.bottom-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bottom-image {
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.home-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-brands {
+    width: 100px;
 }
