@@ -16,13 +16,16 @@
     justify-content: space-between;
 }
 
-.navbar-list {
+.home-navbar ol {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+}
+.home-navbar li {
+    margin-right: 50px;
 }
 
 .logo {
+    margin-left: 50px;
     background-color: rgb(224, 163, 49);
 }
 
@@ -45,41 +48,55 @@ li {
     border: none;
 }
 
-.middle-image {
-    width: 220px;
-    height: 150px;
+.middle-container .subscribe-container {
+    height: 100px;
 }
 
-.middle-image-container {
+.middle-container ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.middle-container li  {
     width: 300px;
-    height: 200px;
-    background-color: rgb(224, 163, 49);
+    height: 180px;
+    margin: 100px;
+}
+
+.middle-container img  {
+    width: 300px;
+    height: 190px;
+}
+
+#cooking-img {
+    height: 290px;
 }
 
 .bottom-container {
     background-color: rgb(224, 163, 49);
 }
 
-.bottom-list {
+.bottom-container ol {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.bottom-image {
+.bottom-container img {
     width: 300px;
     height: 350px;
     border-radius: 10px;
 }
 
-.home-footer {
+.home-footer-container {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.footer-list {
+.home-footer-container ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
