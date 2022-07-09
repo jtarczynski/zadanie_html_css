@@ -33,26 +33,31 @@ body {
 .nav-container {
     display: flex;
     flex-direction: row;
+
 }
 
 .nav-container li {
     margin-top: 50px;
     margin-right: 50px;
-    size: 30px;
     width: 90px;
     height: 50px;
 }
 
 .logo {
-    width: 110px;
-    height: 70px;
+    width: 140px;
+    height: 75px;
 }
 
 .nav-container li, a {
     text-decoration: none;
-    font-size: large;
+    font-size: 20px;
     font-weight: 200;
     color: white;
+}
+
+.nav-container a:hover {
+    border-bottom: 5px solid white;
+    font-size: 22px;
 }
 
 .subscribe-container .header-container {
@@ -108,9 +113,15 @@ li {
     padding-right: 25px;
     border-style: outset;
     border: none;
+    outline:none;
+    font-size: 15px;
     box-shadow: 0px 2px 1px 1px rgb(202, 198, 198);
     border: 0.5px solid rgb(202, 198, 198); 
     border-bottom: 1.5px solid rgb(202, 198, 198);
+}
+
+.subscribe-input:focus {
+    box-shadow: 0px 2px 1px 1px rgb(241, 150, 30);
 }
 
 .subscribe-button {
@@ -125,6 +136,10 @@ li {
     padding-right: 20px;
     border: none;
 }
+
+.subscribe-button:hover {
+    cursor: pointer;
+}  
 
 #cooking-img {
     border: none;
@@ -173,11 +188,8 @@ li {
 .bottom-container {
     height: 450px;
     background-color: rgb(240, 174, 99);
-    width: 100%;
-    margin: 0px;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .bottom-header-container {
@@ -207,6 +219,12 @@ li {
     margin-top:  0px;
 }
 
+.bottom-container li {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
 .bottom-container img {
     width: 280px;
     height: 310px;
@@ -215,7 +233,31 @@ li {
 }
 
 .bottom-container img:hover {
-    
+    opacity: 0.5;
+    transition: all 0.2s ease;
+    background-color: black;
+}
+
+.bottom-container .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    opacity: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bottom-container .description-container p {
+    margin: 2px;
+}
+
+.bottom-container img:hover ~ .description-container {
+    transition: all 0.2s ease;
+    opacity: 1;
 }
 
 .home-footer-container {
