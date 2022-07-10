@@ -10,6 +10,10 @@ body {
     background-repeat: no-repeat;
 }
 
+li {
+    list-style: none
+}
+
 .main-container {
     display: flex;
     justify-content: center;
@@ -40,11 +44,6 @@ body {
     width: 8vw;
 }
 
-.logo {
-    width: 8vw;
-    height: 10vh;
-}
-
 .nav-container li, a {
     text-decoration: none;
     font-size: 20px;
@@ -55,6 +54,20 @@ body {
 .nav-container a:hover {
     border-bottom: 5px solid white;
     font-size: 22px;
+}
+
+.logo {
+    width: 8vw;
+    height: 10vh;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+    width: 28vw;
+    border: none;
 }
 
 .subscribe-container .header-container {
@@ -70,10 +83,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-li {
-    list-style: none
-}
-
 .middle-container {
     display: flex;
     justify-content: space-around;
@@ -84,23 +93,6 @@ li {
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-}
-
-.middle-container .subscribe-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 20vh;
-    width: 28vw;
-    border: none;
-}
-
-.subscribe-container .subscribe-input-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:center;
-    margin-top: 5vh;
 }
 
 .subscribe-input {
@@ -119,6 +111,14 @@ li {
 
 .subscribe-input:focus {
     box-shadow: 0px 2px 1px 1px rgb(241, 150, 30);
+}
+
+.subscribe-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    margin-top: 5vh;
 }
 
 .subscribe-button {
@@ -162,6 +162,13 @@ li {
     border-radius: 10px;
 }
 
+.middle-container span {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2vh;
+}
+
 .middle-container img {
     height: 25vh;
     width: 22vw;
@@ -170,13 +177,6 @@ li {
 .middle-container img:hover {
     height: 27vh;
     width: 24vw;
-}
-
-.middle-container span {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 2vh;
 }
 
 .bottom-container {
@@ -222,16 +222,24 @@ li {
     width: 20vw;
     height: 21vw;
     border-radius: 10px;
-    box-shadow: 0px 2px 1px 1px rgb(240, 151, 100);
+    box-shadow: 0px 2px 1px 1px rgb(250, 167, 119);
 }
 
 .bottom-container img:hover {
-    opacity: 0.5;
     transition: all 0.2s ease;
-    background-color: black;
+    opacity: 0.5;
 }
 
-.bottom-container .description-container {
+/*
+    TODO >> Resolve problem with visibility bug when hovering on description container
+ */
+.bottom-container img:hover ~ .description-container {
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+}
+
+.description-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,15 +250,11 @@ li {
     font-weight: 600;
     opacity: 0;
     font-family: 'Open Sans', sans-serif;
+    visibility: hidden;
 }
 
-.bottom-container .description-container p {
-    margin: 2px;
-}
-
-.bottom-container img:hover ~ .description-container {
-    transition: all 0.2s ease;
-    opacity: 1;
+.description-container p {
+    margin: 0.5vh;
 }
 
 .home-footer-container {
