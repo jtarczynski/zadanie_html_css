@@ -20,32 +20,29 @@ body {
 }
 
 .home-navbar {
-    height: 140px;
+    height: 20vh;
 }
 
 .home-navbar ol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .nav-container {
     display: flex;
     flex-direction: row;
-
 }
 
 .nav-container li {
-    margin-top: 50px;
-    margin-right: 50px;
-    width: 90px;
-    height: 50px;
+    margin-top: 6vh;
+    width: 8vw;
 }
 
 .logo {
-    width: 140px;
-    height: 75px;
+    width: 8vw;
+    height: 10vh;
 }
 
 .nav-container li, a {
@@ -68,7 +65,7 @@ body {
 }
 
 .subscribe-container h1, h3 {
-    margin: 2px;
+    margin: 0.5vh;
     font-weight: 550;
     font-family: 'Open Sans', sans-serif;
 }
@@ -93,8 +90,8 @@ li {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 400px;
-    width: 450px;
+    height: 20vh;
+    width: 28vw;
     border: none;
 }
 
@@ -103,14 +100,14 @@ li {
     flex-direction: row;
     justify-content: flex-start;
     align-items:center;
-    margin-top: 35px;
+    margin-top: 5vh;
 }
 
 .subscribe-input {
     border-radius: 12px;
-    padding: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 1rem;
+    padding-left: 2vw;
+    padding-right: 3vw;
     border-style: outset;
     border: none;
     outline:none;
@@ -130,10 +127,10 @@ li {
     font-weight: 650;
     font-size: 17px;
     border-radius: 9px;
-    margin-left: 18px;
-    padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 1.5vw;
+    padding: 1rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
     border: none;
 }
 
@@ -143,13 +140,14 @@ li {
 
 #cooking-img {
     border: none;
-    width: 350px;
+    width: 23vw;
+    height: 38vh;
 }
 
 .middle-container li {
-    width: 450px;
-    height: 260px;
-    margin: 100px;
+    height: 35vh;
+    width: 28vw;
+    margin: 7vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,24 +163,20 @@ li {
 }
 
 .middle-container img {
-    width: 300px;
-    height: 190px;
+    height: 25vh;
+    width: 22vw;
 }
 
 .middle-container img:hover {
-    width: 340px;
-    height: 210px;
+    height: 27vh;
+    width: 24vw;
 }
 
 .middle-container span {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
-    margin-top: 20px;
-}
-
-#cooking-img {
-    height: 290px;
+    margin-top: 2vh;
 }
 
 .bottom-container {
@@ -202,7 +196,6 @@ li {
 }
 
 .bottom-header-container .fa-solid {
-    margin-right: 12px;
     font-size: 30px;
 }
 
@@ -214,8 +207,8 @@ li {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: 4vw;
+    margin-left: 4vw;
     margin-top:  0px;
 }
 
@@ -226,8 +219,8 @@ li {
 }
 
 .bottom-container img {
-    width: 280px;
-    height: 310px;
+    width: 20vw;
+    height: 21vw;
     border-radius: 10px;
     box-shadow: 0px 2px 1px 1px rgb(240, 151, 100);
 }
@@ -261,7 +254,7 @@ li {
 }
 
 .home-footer-container {
-    height: 60px;
+    height: 8vh;
 }
 
 .home-footer-container ol {
@@ -276,10 +269,10 @@ li {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-right: 70px;
+    margin-right: 4vw;
 }
 
 .fa-brands {
     font-size: 40px;
-    margin-left: 30px;
+    margin-left: 3vw;
 }
