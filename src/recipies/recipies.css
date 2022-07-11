@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family');
+}
+
+#recipies-navbar {
+    background-color: rgb(240, 174, 99);
+    height: 18vh;
+}
+
+.top-recipies-container ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle-recipies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.middle-recipies-container img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: 10% 0%;
+}
+
+.middle-recipies-container p {
+    position: absolute;
+    font-size: 4.5vw;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-top: 25vh;
+}
+
+.bottom-recipies-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 14vh;
+    justify-content: space-around;
+}
+
+.left-bottom-recipies-container table,
+th {
+    border: solid 0.1vw;
+    border-collapse: collapse;
+}
+
+.left-bottom-recipies-container th {
+    padding: 3vh;
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+
+/* First and last child affect all table headers*/
+.left-bottom-recipies-container table th:first-child:hover {
+    background-color: rgb(243, 214, 181);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.left-bottom-recipies-container table th:last-child:hover {
+    background-color: rgb(243, 214, 181);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.left-bottom-recipies-container table th:hover {
+    background-color: rgb(243, 214, 181);
+}
+
+.left-bottom-recipies-container table {
+    border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden;
+    box-shadow: 0 0 0 0.1vw black;
+}
+
+.right-bottom-recipies-container {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 32vw;
+}
+
+.right-bottom-recipies-container img {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 10% 63%;
+    width: 35vw;
+    height: 35vh;
+}
+
+.right-bottom-recipies-container p {
+    color: rgb(240, 174, 99);
+    font-size: 3.5vh;
+    font-weight: 550;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container p {
+    margin-top: 0px;
+}
+
+.ingredtiens-list li {
+    list-style: disc
+}
+
+.instruction-list {
+    width: 35vw;
+}
+
+.instruction-list li {
+    list-style: decimal;
+}
+
+.image-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.image-label .fa {
+    font-size: 5vh;
+    color: rgb(240, 174, 99);
+}
+
+.image-label p {
+    margin-left: 1vw;
+    margin-right: 6vw;
+    font-size: 2.2vh;
+    color: black;
+}
+
+#recipes-footer {
+    margin-top: 5vh;
+    height: 10vh;
+    font-size: 1.4vw;
+}
+

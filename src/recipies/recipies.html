@@ -4,14 +4,179 @@
 <head>
     <meta charset="UTF-8" />
     <title>Home</title>
-    <link rel="stylesheet" href="./home.css" />
+    <script src="https://kit.fontawesome.com/384ac790e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./recipies.css" />
+    <link rel="stylesheet" href="../index.css" />
 </head>
 
 <body>
-    <div class="recipies-main-container">
-        <div class="recipies-navbar">
-            <h1>Nothing to see here :D</h1>
+    <div class="main-container">
+        <div class="navbar" id="recipies-navbar">
+            <ol>
+                <li><img class="logo" src="../../img/png/logo.png" /></li>
+                <div class="nav-container">
+                    <li><a href="../home/home.html">Home</a></li>
+                    <li><a href="recipies.html">Recipies</a></li>
+                    <li id="smth">About</li>
+                    <li>Contact</li>
+                </div>
+            </ol>
         </div>
+        <div class="top-recipies-container">
+            <ol>
+                <li>
+                    <div class="subscribe-search-container">
+                        <div class="header-container">
+                            <h1>Recipies</h1>
+                            <h3>With shopping list!</h3>
+                        </div>
+                        <div class="subscribe-search-input-container">
+                            <input class="subscribe-search-input" placeholder="Enter your e-mail" />
+                            <button class="subscribe-search-button">Search</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img id="cooking-img" src="../../img/svg/eating_together.svg" />
+                </li>
+            </ol>
+        </div>
+        <div class="middle-recipies-container">
+            <img src="../../img/photo/breakfast.jpg" />
+            <p>Breakfast</p>
+        </div>
+        <div class="bottom-recipies-container">
+            <div class="left-bottom-recipies-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Orange Pancakes</th>
+                        </tr>
+                        <tr>
+                            <th>Oatmeal with pecans</th>
+                        </tr>
+                        <tr>
+                            <th>French Toast</th>
+                        </tr>
+                        <tr>
+                            <th>Breakfast Burrito</th>
+                        </tr>
+                        <tr>
+                            <th>Banana Bread</th>
+                        </tr>
+                        <tr>
+                            <th>Omlet with greens</th>
+                        </tr>
+                        <tr>
+                            <th>Omlette du fromage</th>
+                        </tr>
+                        <tr>
+                            <th>Jammy egg toast</th>
+                        </tr>
+                        <tr>
+                            <th>Tropical Smoothie Bowl</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="right-bottom-recipies-container">
+                <div class="image-container">
+                    <p>Orange pancakes</p>
+                    <img id="first-image" src="../../img/photo/pancakes.jpg" />
+                </div>
+                    <div class="image-label">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <p> 25 min</p>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <p> 2 servings</p>
+                    </div>
+                <ol class="ingredtiens-list">
+                    <h2>
+                        Ingredtiens:
+                    </h2>
+                    <li>
+                        1</sup>&frasl;<sub>2</sub> cup orange juice
+                    </li>
+                    <li>
+                        1 tablespoon orange zest, finely grated
+                    </li>
+                    <li>
+                        1<sup>1</sup>&frasl;<sub>2</sub> cups all-purpose flour
+                    </li>
+                    <li>
+                        1</sup>&frasl;<sub>2</sub> baking soda
+                    </li>
+                    <li>
+                        1<sup>1</sup>&frasl;<sub>2</sub> teaspoon baking powder
+                    </li>
+                    <li>
+                        1</sup>&frasl;<sub>2</sub> teaspoon salt
+                    </li>
+                    <li>
+                        1</sup>&frasl;<sub>4</sub> cup granulated sugar
+                    </li>
+                    <li>
+                        1</sup>&frasl;<sub>2</sub> cup milk
+                    </li>
+                    <li>
+                        2 eggs
+                    </li>
+                    <li>
+                        4 tablespoon butter, melted
+                    </li>
+                    <li>
+                        1 tablespoon vegetable oil, to grease the pan
+                    </li>
+                </ol>
+                <ol class="instruction-list">
+                    <h2>Instruction:</h2>
+                    <li>
+                        Whisk milk, eggs, orange juice and orange zest in a large
+                        bowl until smooth.
+                    </li>
+                    <li>
+                        Whisk in flour, sugar, salt, baking powder and baking soda.
+                        Whisk in melted butter and stir until smooth.
+                    </li>
+                    <li>
+                        Heat large pan over medium heat. Grease the pan with oil.
+                        Now, pour about 1</sup>&frasl;<sub>4</sub> cup of the batter
+                        into the pan for each pancake.
+                    </li>
+                    <li>
+                        When bubbles begin to appear on top, flip the pancakes
+                        and cook for 1-2 minutes or until the other side is lightly
+                        brown.
+                    </li>
+                    <li>
+                        Place the pancakes into a serving plate. Serve with whipped
+                        cream and a drizzle of maple syrup on top.
+                    </li>
+
+
+                </ol>
+
+            </div>
+        </div>
+        <footer class="footer-container" id="recipes-footer">
+            <ol>
+                <li><span>&#169; 2022 EasyMeals. All rigth reserved.</span></li>
+                <div class="icon-container">
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-pinterest"></i>
+                    </li>
+                </div>
+            </ol>
+        </footer>
     </div>
 
 </body>
